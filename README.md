@@ -4,7 +4,7 @@
 
 The goal of this project is to provide minimalistic django project template that everyone can use, which _just works_ out of the box and has the basic setup you can expand on. 
 
-Template is written with django 1.11 and python 3 in mind.
+Template is written with django 3.04 and python 3.70 in mind.
 
 ![Default Home View](__screenshots/home.png?raw=true "Title")
 
@@ -72,8 +72,22 @@ First clone the repository from Github and switch to the new directory:
 
     $ git clone git@github.com/USERNAME/{{ project_name }}.git
     $ cd {{ project_name }}
+
     
 Activate the virtualenv for your project.
+
+If you don't have mysql installed, then run:  
+
+< Debian/Ubuntu >
+
+    $ sudo apt update
+    $ sudo apt install -y python3-pip python3-dev libpq-dev postgresql postgresql-contrib
+
+< macOS >
+
+    $ brew install postgresql
+    $ brew install openssl
+    $ export LDFLAGS=-L/usr/local/opt/openssl/lib
     
 Install project dependencies:
 

@@ -160,3 +160,7 @@ fabric.properties
 # Development sqlite database
 
 dev.db
+
+
+# venv
+venv/
