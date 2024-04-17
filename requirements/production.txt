@@ -1,5 +1,5 @@
 #  Production dependencies
 -r base.txt
-gunicorn==20.0.4
+gunicorn==22.0.0
 psycopg2==2.8.4
 django-mailgun==0.9.1
